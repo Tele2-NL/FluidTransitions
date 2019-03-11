@@ -1,5 +1,7 @@
 # Fluid Transitions for React Navigation
 
+[Why is this a fork?](#why-is-this-a-fork)
+
 <a href="https://www.npmjs.com/package/react-navigation-fluid-transitions">
   <img src="https://img.shields.io/npm/v/react-navigation-fluid-transitions.svg?style=flat-square">
 </a>
@@ -144,3 +146,7 @@ Christian Falch (@chrfalch), Yuuki Arisawa (@uk-ar), Joe Goodall (@joegoodall1),
 
 ### Sponsors
 [Fram X](https://framx.no) - a cross platform app company from Norway. 
+
+### Why is this a fork?
+
+Some animations weren't running correctly when using this library, the problem was that in [TransitionItemsView.js](./lib/TransitionItemsView.js#L390-L393) there is a check that only runs the transition after all the interactions are done.
